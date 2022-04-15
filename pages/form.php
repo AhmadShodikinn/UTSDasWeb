@@ -8,8 +8,8 @@
     <script src="../js/script.js"></script>
 </head>
 <body>
-    <div class="header">
-        <img src="../images/logo.png" alt="desainkit">
+	<div class="header">
+        <img src="../images/headerPg.png" width="40%" alt="LIPUTAN SUGENG" >  <!-- Edit gambar header-->
     </div>
       
       <div class="navbar">

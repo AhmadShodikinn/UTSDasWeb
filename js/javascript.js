@@ -1,9 +1,13 @@
 // read more
-function readMore(udin) {
-    let dots = document.querySelector(`.read-more[article-x="${udin}"] .dots`);
-    let moreText = document.querySelector(`.read-more[article-x="${udin}"] .more`);
-    let btnText = document.querySelector(`.read-more[article-x="${udin}"] .readBtn`);
+function readMore() {
+    // let dots = document.querySelector(`.read-more[article-x="${udin}"] .dots`);
+    // let moreText = document.querySelector(`.read-more[article-x="${udin}"] .more`);
+    // let btnText = document.querySelector(`.read-more[article-x="${udin}"] .readBtn`);
 
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("moreRead");
+    var btnText = document.getElementById("readBtn");
+    
     if (dots.style.display === "none") {
         dots.style.display = "inline";
         btnText.textContent = "Read more";
