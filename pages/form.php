@@ -113,7 +113,7 @@
     <button onclick="topFunction()" id="gotoTop" title="Go to top">&#8593;</button>
   
     <div class="footer">
-        <b>&#169; 2021 DesainKit • Dibuat dengan &#10084;&#65039; oleh <a href="https://desainkit.com/contact/" target="_blank">Ahnafudin</a></b>
+        <b>&#169; 2022 Website ini disusun oleh Arya1, Arya2, Diki </b>
     </div>      
 </body>
 </html>
