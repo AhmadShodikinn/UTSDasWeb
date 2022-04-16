@@ -20,7 +20,7 @@
       
       
     <div class="main">
-	<div class="running-text"><marquee>Selamat hari raya Ramadhan yang ke - N , semoga kita senantiasa lancar sampai hari kemenangan (emot tangan)</marquee></div>
+	<div class="running-text"><marquee>Selamat menjalankan ibadah puasa, Semoga kita senantiasa dilancarkan sampai datangnya hari kemenangan :D</marquee></div>
 
 		<h2>Formulir</h2>
 		<form action="" method="post">
@@ -77,9 +77,6 @@
 		}?>	
     </div>
 
-    <!-- goTop -->
-	<button onclick="topFunction()" id="gotoTop" title="Go to top">TOP</button>
-  
 	<div class="footer">
         <b>&#169; 2022 Dasar Website</b>
     </div>   
