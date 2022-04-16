@@ -9,6 +9,12 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
+
 function topFunction() {
   document.documentElement.scrollTop = 0; 
 }
+
+document.querySelector('button#close').addEventListener('click', function () {
+  document.querySelector('.ads').classList.add('hidden') 
+  document.querySelector('.ads-overlay').classList.add('hidden') 
+})
