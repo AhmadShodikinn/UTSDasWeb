@@ -97,8 +97,13 @@ html{
     transform-origin: bottom right;
     transition: transform 0.20s ease-out;
     }
+    .title:hover{
+      color: orange;
+    }
+
 
   .title:hover:after{
+    
     transform: scaleX(1);
     transform-origin: bottom left;
   }
