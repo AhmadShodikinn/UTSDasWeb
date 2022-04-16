@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 *{
     box-sizing: border-box;
     max-width: 1000px; 
@@ -11,10 +15,10 @@
     background-color: #f0f2f5;
   }
 
-  #moreRead {
+  #read {
     /* display: none; */
     font-weight: bold;
-    background-color: #fe6487;
+    background-color: #FFBD59;
     color: white;
     padding: 10px 20px;
     text-transform: uppercase;
@@ -29,6 +33,7 @@
   }
   
   .navbar {
+    z-index: 1;
     overflow: hidden;
     background-color: #ffffff;
     font-weight: bold;
@@ -74,6 +79,30 @@
     text-align: center;
   }
 
+  .title{
+      display: inline-block;
+      position: relative;
+      color: black;
+  }
+
+  .title:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;;
+    background-color: #FFBD59;
+    transform-origin: bottom right;
+    transition: transform 0.20s ease-out;
+    }
+
+  .title:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
   h1, h2 {
     line-height: 2;
     text-align: left;
@@ -96,6 +125,8 @@
 
   a {
   text-decoration: none;
+  background-color: transparent;
+  color: black;
  }
 
   .thumbnail {
@@ -105,7 +136,7 @@
   }
 
   #gotoTop {
-    display: none;
+    /* display: none; */
     position: fixed;
     bottom: 20px;
     right: 30px;
@@ -113,7 +144,7 @@
     font-size: 12px;
     border: none;
     outline: none;
-    background-color: #fe6487;
+    background-color: #FFBD59;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -121,7 +152,7 @@
   }
   
   #gotoTop:hover {
-    background-color: rgba(254,100,135,0.85);
+    background-color: #FFBD59;
   }
   
   input, select {

@@ -20,6 +20,8 @@
       
       
     <div class="main">
+	<div class="running-text"><marquee>Selamat hari raya Ramadhan yang ke - N , semoga kita senantiasa lancar sampai hari kemenangan (emot tangan)</marquee></div>
+
 		<h2>Formulir</h2>
 		<form action="" method="post">
 			<div class="row">
@@ -56,30 +58,7 @@
 					?>
 				</div>
 			</div>
-			<div class="row">
-				<label>Pendidikan Terakhir</label>
-				<select name="pendidikan">
-					<?php $options = array('SD', 'SMP', 'SMA', 'S1', 'S2', 'S3');
-					foreach ($options as $pendidikan) {
-						$selected = @$_POST['pendidikan'] == $pendidikan ? ' selected="selected"' : '';
-						echo '<option value="' . $pendidikan . '"' . $selected . '>' . $pendidikan . '</option>';
-					}?>
-				</select>
-			</div>
-			<div class="row">
-				<label>Tau website ini darimana?</label>
-				<div class="options">
-					<?php 
-					$program = array('Google', 'Telegram', 'Whatsapp', 'Facebok', 'Instagram', 'Line');
-					foreach ($program as $info) {
-						$checked = isset($_POST['info_' . $info]) ? ' checked="checked"' : '';
-						echo '<label class="checkbox">
-								<input type="checkbox" name="info_' . $info . '"' . $checked . '>' . $info . 
-							'</label>';
-					}
-					?>
-				</div>
-			</div>
+			
 			<div class="row">
 				<input type="submit" name="submit" value="Simpan"/>
 			</div>
@@ -94,26 +73,15 @@
 			echo '<li>Tanggal Lahir: ' . $_POST['lahir'] . '</li>';
 			echo '<li>Email: ' . $_POST['email'] . '</li>';
 			echo '<li>Jenis Kelamin: ' . (isset($_POST['jenis_kelamin']) ? $jenis_kelamin[$_POST['jenis_kelamin']] : '-') . '</li>';
-			
-			$list_info = array();
-			foreach ($program as $info) {
-				if ( isset($_POST['info_' . $info]) )
-				{
-					$list_info[] = $info;
-				}
-			}
-			echo '<li>Pendidikan Terakhir: ' . $_POST['pendidikan'] . '</li>';
-			// echo '<li>Tau website ini dari: ' . ($list_info ? join($list_info, ', ') : '-') . '</li>';
 			echo '</ul>';
 		}?>	
     </div>
 
     <!-- goTop -->
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <button onclick="topFunction()" id="gotoTop" title="Go to top">&#8593;</button>
+	<button onclick="topFunction()" id="gotoTop" title="Go to top">TOP</button>
   
-    <div class="footer">
-        <b>&#169; 2022 Website ini disusun oleh Arya1, Arya2, Diki </b>
-    </div>      
+	<div class="footer">
+        <b>&#169; 2022 Dasar Website</b>
+    </div>   
 </body>
 </html>

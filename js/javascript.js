@@ -1,36 +1,14 @@
-// read more
-function readMore() {
-    // let dots = document.querySelector(`.read-more[article-x="${udin}"] .dots`);
-    // let moreText = document.querySelector(`.read-more[article-x="${udin}"] .more`);
-    // let btnText = document.querySelector(`.read-more[article-x="${udin}"] .readBtn`);
+mybutton = document.getElementById("gotoTup");
 
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("moreRead");
-    var btnText = document.getElementById("readBtn");
-    
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.textContent = "Read more";
-        moreText.style.display = "none";
-    } else {
-        dots.style.display = "none";
-        btnText.textContent = "Read less";
-        moreText.style.display = "inline";
-    }
-}
-
-// scrool to top
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("gotoTop").style.display = "block";
-    } else {
-        document.getElementById("gotoTop").style.display = "none";
-    }
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
 }
-
 function topFunction() {
- 
-     $('html, body').animate({scrollTop:0}, 'slow');
+  document.documentElement.scrollTop = 0; 
 }
